@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ESP32 - Controle</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Documento CSS do framework Bootstrap -->
+        <link href="css/style.css" rel="stylesheet"> <!-- Documento CSS da página  -->
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="navbar"> <!-- NAVBAR -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Controle</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Controle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <!-- navbar -->
+
+        <div class="conteudo01"> <!-- CONTEUDO -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4 cardControle">
+                        <p class="tituloControle">Controles</p>
+                        <hr class="divisaoControle">
+                        <div id="integracaoSwitches"></div> <!-- Implementa o bloco HTML dos switches, contido na variável "switches" no arquivo js/index.js -->
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+            </div>
+        </div><!-- conteudo -->
+
+        <div class="footer fundo-dark fonte-light"> <!-- FOOTER -->
+            <div class="container">
+                <div class="row cardFooter">
+                    <div class="col-sm-6 colunaFooter">
+                        <img src="midia/github-icone-branco.png" alt="Erro ao carregar a imagem" class="imagemFooter">
+                        <p class="textoFooter">Projeto disponibilizado em 
+                            <a class="linkRedirectFooter" href="https://github.com/VictorTazoi/automacao-esp32.git" target="_blank">GitHub</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 colunaFooter">
+                        <hr>
+                        <p class="tituloFooter">Sobre</p>
+                        <a class="linkFooter" type="button" href="sobre.html#introducao">Sobre o projeto</a>
+                        <a class="linkFooter" type="button" href="sobre.html#alteracoes">Alterações</a>
+                        <a class="linkFooter" type="button" href="sobre.html#links">Links</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- footer -->
+
+        <script src="js/bootstrap.bundle.min.js"></script> <!-- Documento JS do framework Bootstrap -->
+        <script src="js/index.js"></script> <!-- Documento JS da página -->
+    </body>
+</html>

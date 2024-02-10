@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ESP32 - Sobre</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Documento CSS do framework Bootstrap -->
+        <link href="css/style.css" rel="stylesheet"> <!-- Documento CSS da página  -->
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="navbar"> <!-- NAVBAR -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Sobre</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Controle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <!-- navbar -->
+
+        <div class="conteudoSobre"> <!-- CONTEUDO -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6 cardSobre">
+                        <a name="introducao"></a>
+                        <div class="subtituloSobre">
+                            Introdução
+                        </div>
+                        <hr class="divisaoSobre">
+                        <div class="textoSobre">
+                            O projeto Controle-ESP32 se resume em um sistema de envio de comandos ao microcontrolador ESP32, o qual a partir de uma interface web, se torna capaz de controlar atuadores declarados em sua programação.
+
+                        </div>
+                        <div class="textoSobre">
+                            No diretório do projeto, se encontra o arquivo "upload-esp32.ino", referente á programação do ESP32. O mesmo foi desenvolvido pelo autor Wagner Rambo, do canal WR Kits e publicado na plataforma GitHub.
+                        </div>
+                        <br>
+                        <a name="alteracoes"></a>
+                        <div class="subtituloSobre">
+                            Alterações
+                        </div>
+                        <hr class="divisaoSobre">
+                        <div class="textoSobre">
+                            O projeto original desenvolvido pelo autor Wagner Rambo teve como principal foco o envio de comandos ao microcontrolador, conforme apresento na imagem abaixo:
+                        </div>
+                        <br>
+                        <img src="midia/interface-original.png" alt="Erro ao carregar a imagem" class="imagemSobre">
+                        <br>
+                        <div class="textoSobre">
+                            Contudo, minha contribuição com o projeto original foi o desenvolvimento da nova interface web, integrada ao código de envio de comandos ao microcontrolador, conforme apresentada na imagem abaixo:
+                        </div>
+                        <img src="midia/interface-atual-01.png" alt="Erro ao carregar a imagem" class="imagemSobre">
+                        <div class="textoSobre">
+                            Interface a qual também possui responsividade total com dispositivos mobile, conforme apresentada na imagem abaixo:
+                        </div>
+                        <div class="imagemMobile">
+                            <img src="midia/interface-atual-mobile-01.png" alt="Erro ao carregar a imagem" class="imagemSobre">
+                        </div>
+                        <a name="links"></a>
+                        <div class="subtituloSobre">
+                            Links
+                        </div>
+                        <hr class="divisaoSobre">
+                        <div style="padding: 0.5em;">
+                            <a class="btn btn-outline-light botaoReferencias" href="https://github.com/VictorTazoi/controle-esp32.git" target="_blank">GitHub - Projeto Controle-ESP32</a>
+                        </div>
+                        <div style="padding: 0.5em;">
+                            <a class="btn btn-outline-light botaoReferencias" href="https://github.com/wagner-rambo/arquivos/blob/c37a90bce6fd6cca6de166ee20b7168650b3a1f9/vAula369_WR_Files.rar" target="_blank">GitHub - Projeto original</a>
+                        </div>
+                        <div style="padding: 0.5em;">
+                            <a class="btn btn-outline-danger botaoReferencias" href="https://youtu.be/WiNiXOo2rvw?si=Zdr6nqplpACOVkYA" target="_blank">Youtube - WR Kits</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+        </div><!-- conteudo -->
+
+        <div class="footer fundo-dark fonte-light"> <!-- FOOTER -->
+            <div class="container">
+                <div class="row cardFooter">
+                    <div class="col-sm-6 colunaFooter">
+                        <img src="midia/github-icone-branco.png" alt="Erro ao carregar a imagem" class="imagemFooter">
+                        <p class="textoFooter">Projeto disponibilizado em 
+                            <a class="linkRedirectFooter" href="https://github.com/VictorTazoi/automacao-esp32.git" target="_blank">GitHub</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 colunaFooter">
+                        <hr>
+                        <p class="tituloFooter">Sobre</p>
+                        <a class="linkFooter" type="button" href="sobre.html#introducao">Sobre o projeto</a>
+                        <a class="linkFooter" type="button" href="sobre.html#alteracoes">Alterações</a>
+                        <a class="linkFooter" type="button" href="sobre.html#links">Links</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- footer -->
+
+        <script src="js/bootstrap.bundle.min.js"></script> <!-- Documento JS do framework Bootstrap -->
+    </body>
+</html>

@@ -1,0 +1,184 @@
+/* Documento CSS padrão para todas as páginas */
+
+/* CONTEUDO */
+/* - Definição de cores padrão */
+/* - Classe de cores padrão */
+/* - Formatação da Navbar */
+/* - Formatação do Controle */
+/* - Formatação da Seção sobre */
+/* - Formatação do Footer */
+
+
+/*
+========== LEIA A DOCUMENTAÇÃO! ==========
+*/
+
+
+/* DEFINIÇÃO DE CORES PADRÃO */
+:root{
+    --cl-bootstrap-dark: #212529;
+    --cl-bootstrap-light: #f7f7f7;
+}
+/* CLASSE DE CORES PADRÃO */
+.fundo-dark{
+    background-color: var(--cl-bootstrap-dark);
+}
+.fonte-light{
+    color: var(--cl-bootstrap-light);
+}
+
+/* BODY */
+body{
+    background-color: #171a1d;
+}
+
+/* FORMATAÇÃO DA NAVBAR */
+.navbar-brand{ /* Titulo da navbar */
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    text-align: center;
+    border-radius: 0.5em;
+    font-size: 1.25em;
+    transition: 0.25s;
+}
+.navbar-brand:hover{ /* Titulo da navbar quando o ponteiro do mouse está sobre o elemento*/
+    background-color: #3c3f41;
+}
+.nav-item{/* Links da navbar */
+    text-align: center;
+    border-radius: 0.5em;
+    font-size: 1em;
+    transition: 0.25s;
+}
+.nav-item:hover{ /* Links da navbar quando o ponteiro do mouse está sobre o elemento */
+    background-color: #3c3f41;
+}
+
+/* FORMATAÇÃO DO CONTEUDO */
+.conteudo01{ /* Container onde se encontra todo o conteúdo */
+    height: 100%;
+    padding: 4em;
+}
+.cardControle{ /* Bloco do controle */
+    background-color: var(--cl-bootstrap-dark);
+    border-radius: 1em;
+    padding: 1em;
+}
+.tituloControle{ /* Titulo do controle */
+    font-size: 1.5em;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+.divisaoControle{ /* Linha que divide o titulo dos switches */
+    color: #fff;
+}
+.containerSwitch{  /* Espaço onde são alocados os switches */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 0.5em;
+    width: 100%;
+    padding: 0.2em;
+}  
+
+/* FORMATAÇÃO DO CONTEUDO */
+.conteudoSobre{
+    height: 100%;
+    padding: 2em;
+}
+.cardSobre{
+    background-color: var(--cl-bootstrap-dark);
+    border-radius: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+.tituloSobre{
+    font-size: 1.5em;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+.divisaoSobre{
+    color: #fff;
+}
+.subtituloSobre{
+    padding-top: 2em;
+    font-size: 1.2em;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+}
+.textoSobre{
+    font-size: 1em;
+    font-family: Arial;
+    font-weight: normal;
+    text-align: justify;
+    color: #ffffffa1;
+    padding: 0.5em;
+}
+.linkConteudoSobre{
+    text-decoration: none;
+    cursor: pointer;
+}
+.imagemSobre{ /* Formatação da imagem padrão */
+    width: 100%;
+    padding: 1em;
+}
+.imagemMobile{
+    width: 50%;
+    margin: auto;
+}
+.botaoReferencias{
+    width: 100%;    
+}
+
+/* FORMATAÇÃO DO FOOTER */
+.footer{ /* Container onde se encontra todo o conteudo do footer */
+    
+    bottom:0;
+    width: 100%;
+}
+.cardFooter{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.colunaFooter{ /* Coluna do conteudo dentro do footer */
+    text-align: center;
+}
+.textoFooter{/* Texto padrão do footer */
+    font-size: 1em;
+}
+.linkRedirectFooter{/* Link de redirecionamento do footer */
+    text-decoration: none;
+}
+.tituloFooter{/* Titulo do padrão do footer */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.linkFooter{/* Botoes de link do footer */
+    padding: 0.25em;
+    font-size: 1em;
+    font-weight: normal;
+    border-radius: 0.5em;
+    transition: 0.15s;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+}
+.linkFooter:hover{/* Botoes de link do footer quando o ponteiro do mouse está sobre o elemento */
+    font-weight: normal;
+    background-color: #3c3f41;
+}
